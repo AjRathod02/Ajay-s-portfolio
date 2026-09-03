@@ -25,7 +25,7 @@ export function AboutSection() {
       <div className="mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent">About</p>
         <h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-          Building products that <span className="gradient-text">move metrics</span>
+          Data analyst mindset, <span className="gradient-text">engineer execution</span>
         </h2>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl">{summary}</p>
       </div>
@@ -41,7 +41,7 @@ export function SkillsSection() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-violet">Stack</p>
           <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">Technical skills</h2>
           <p className="mt-3 max-w-2xl text-muted">
-            Languages, frameworks, and practices I use to ship reliable software.
+            Analytics, data stores, and full-stack tools I use to answer questions with evidence and ship what teams rely on.
           </p>
         </FadeIn>
 
@@ -132,7 +132,7 @@ export function ProjectsSection() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-violet">Selected work</p>
           <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">Projects</h2>
           <p className="mt-3 max-w-2xl text-muted">
-            Full-stack systems, commerce, and analytics—built for real users and business outcomes.
+            Products and analysis work—from dashboards and ops systems to ML-backed studies—with outcomes in mind.
           </p>
         </FadeIn>
 
@@ -151,8 +151,22 @@ export function ProjectsSection() {
                       <Rocket className="h-5 w-5" aria-hidden />
                     </span>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-white">{p.name}</h3>
-                      <p className="text-sm font-medium text-accent">{p.tag}</p>
+                      {p.url ? (
+                        <a
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-display text-xl font-bold text-white transition hover:text-accent"
+                        >
+                          {p.name}
+                        </a>
+                      ) : (
+                        <h3 className="font-display text-xl font-bold text-white">{p.name}</h3>
+                      )}
+                      <p className="text-sm font-medium text-accent">
+                        {p.tag}
+                        {p.period ? ` · ${p.period}` : ''}
+                      </p>
                     </div>
                   </div>
                   <Code2 className="h-5 w-5 text-white/20 transition group-hover:text-accent/80" aria-hidden />

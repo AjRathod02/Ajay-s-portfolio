@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Ajay Rathod',
-  titles: ['Software Developer', 'Full-Stack Engineer', 'Data Analyst'],
+  titles: ['Data Analyst', 'Software Developer', 'Full-Stack Engineer'],
   email: 'rathodaj02@gmail.com',
   phone: '+91 9834183493',
   location: 'Maharashtra, India',
@@ -8,19 +8,30 @@ export const profile = {
   github: 'https://github.com/AjRathod02',
 }
 
-export const summary = `Results-driven Software Developer with experience in building scalable full-stack applications, automation using Python, and data-driven decision systems. Proven ability to optimize inventory, improve pricing strategies, and deliver business impact through technology. Skilled in modern web stacks including React, Next.js, Supabase, and Firebase.`
+export const summary = `Data analyst and developer who connects business questions to measurable outcomes. I work end-to-end—from SQL queries and Python automation to dashboards and internal tools—so teams can see trends, track KPIs, and act with confidence. At work I have applied that lens to inventory acquisition, pricing, and occupancy: defining metrics, validating assumptions with data, and iterating on what the numbers show. On the engineering side I ship with React, Next.js, Supabase, and Firebase when a problem is best solved with a product, not only a spreadsheet.`
 
 export const skillGroups = [
   {
+    title: 'Data & analytics',
+    items: [
+      'SQL',
+      'Python (analysis & automation)',
+      'Dashboards & KPIs',
+      'Exploratory analysis',
+      'Reporting & storytelling',
+      'Data cleaning & validation',
+    ],
+  },
+  {
     title: 'Languages',
-    items: ['JavaScript', 'Python', 'SQL'],
+    items: ['JavaScript', 'Python'],
   },
   {
     title: 'Frontend',
     items: ['React.js', 'Next.js', 'Tailwind CSS'],
   },
   {
-    title: 'Backend & Data',
+    title: 'Backend & data stores',
     items: ['Supabase (PostgreSQL)', 'Firebase', 'MongoDB'],
   },
   {
@@ -32,22 +43,22 @@ export const skillGroups = [
     items: ['REST APIs', 'Authentication', 'System Design'],
   },
   {
-    title: 'Other',
-    items: ['Automation', 'Data Analysis', 'Pricing Strategy', 'Inventory Optimization'],
+    title: 'Domain',
+    items: ['Pricing strategy', 'Inventory optimization', 'Operational metrics', 'Stakeholder communication'],
   },
 ]
 
 export const experience = [
   {
-    role: 'Software Developer',
+    role: 'Software Developer & Data Analyst',
     company: 'Reunios',
     period: '2024 – Present',
     highlights: [
-      'Developed Python automation scripts reducing manual effort and improving operational efficiency.',
-      'Built internal web tools and dashboards to streamline business workflows.',
-      'Performed inventory acquisition analysis to optimize resource allocation and availability.',
-      'Designed data-driven pricing strategies to maximize revenue and occupancy.',
-      'Collaborated on full-stack development tasks contributing to scalable business solutions.',
+      'Owned recurring reporting and dashboard views for occupancy, revenue, and operational KPIs; translated stakeholder questions into SQL-backed analyses and Python workflows for inventory, pricing, and acquisition.',
+      'Ran inventory acquisition analysis and partnered on pricing strategy, grounding recommendations in revenue, occupancy, and utilization signals.',
+      'Built internal web tools and dashboards so teams see metrics inside the workflows they already use.',
+      'Developed Python automation to cut manual work, tighten data quality, and keep operational pipelines reliable.',
+      'Contributed across the stack (UI, APIs, data access) to scalable, maintainable systems that support day-to-day business operations.',
     ],
   },
 ]
@@ -55,35 +66,41 @@ export const experience = [
 export const projects = [
   {
     name: 'CasaFlow',
-    tag: 'Full-Stack PMS',
+    tag: 'Property Management System',
+    period: '2024 – Present',
     description:
-      'End-to-end property management system with booking, inventory, pricing, dashboards, and third-party integrations (Beds24, Hospitable).',
-    stack: ['Next.js', 'Supabase', 'MongoDB'],
+      'Developed Python backend logic and REST APIs for booking, pricing, and inventory workflows. Integrated Beds24 and Hospitable via API automation; built real-time dashboards and data pipelines.',
+    stack: ['Python', 'React', 'Next.js', 'REST APIs', 'Supabase'],
   },
   {
-    name: 'FastKart',
-    tag: 'Quick-Commerce',
+    name: 'Personal Portfolio Website',
+    tag: 'Portfolio',
+    period: '2024 – Present',
     description:
-      'E-commerce platform with real-time order tracking, role-based modules, payments, and Firebase backend.',
-    stack: ['React', 'Firebase', 'Payments'],
-  },
-  {
-    name: 'BrightLink',
-    tag: 'Corporate Site',
-    description: 'Responsive multi-page React website deployed on Firebase Hosting.',
-    stack: ['React', 'Firebase Hosting'],
-  },
-  {
-    name: 'Ride Sharing App',
-    tag: 'Android',
-    description: 'Android application with real-time tracking and payment system.',
-    stack: ['Android', 'Real-time', 'Payments'],
+      'Designed and deployed an interactive portfolio with responsive UI, project showcase, and contact form on Firebase Hosting.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Firebase Hosting'],
+    url: 'https://ajay-portfolio-3bcf8.web.app',
   },
   {
     name: 'Student Dropout Analysis',
-    tag: 'ML + Web',
-    description: 'Machine learning model with web interface for predictive insights.',
-    stack: ['Python', 'ML', 'Web UI'],
+    tag: 'ML & Data Analysis',
+    description:
+      'Built ML models for dropout prediction; performed preprocessing, feature engineering, and web visualization for stakeholder-friendly insights.',
+    stack: ['Python', 'Machine Learning', 'Data Analysis'],
+  },
+  {
+    name: 'FastKart',
+    tag: 'E-commerce Platform',
+    description:
+      'Implemented catalog, cart, checkout, order tracking, and role-based access control across a full-stack commerce flow.',
+    stack: ['React', 'Next.js', 'Firebase', 'MongoDB', 'REST APIs'],
+  },
+  {
+    name: 'BrightLink',
+    tag: 'Corporate Website',
+    description:
+      'Built a responsive, performance-optimized corporate website with cross-device compatibility.',
+    stack: ['React', 'Tailwind CSS'],
   },
 ]
 

@@ -50,7 +50,7 @@ export function Hero() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
           <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden />
-          Open to impactful full-stack & data roles
+          Data analyst & full-stack — open to analytics and product-minded roles
         </motion.div>
 
         <motion.h1

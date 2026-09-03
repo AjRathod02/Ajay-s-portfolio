@@ -22,7 +22,7 @@ export function Footer() {
               Let&apos;s build something <span className="gradient-text">remarkable</span>
             </h2>
             <p className="mt-4 max-w-xl text-muted">
-              Reach out for collaborations, full-stack roles, or data-driven product work.
+              Reach out for data analyst roles, analytics collaborations, or full-stack product work.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
