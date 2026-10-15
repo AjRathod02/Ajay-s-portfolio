@@ -1,16 +1,15 @@
-# React + Vite
+# Ajay Rathod — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Static site: `index.html`, `assets/`, `resumes/`, and `screenshots/`. No install or build step.
 
-Currently, two official plugins are available:
+## Preview locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+python3 -m http.server 4173
+```
 
-## React Compiler
+Open http://localhost:4173. Serve it over HTTP so the hero module script can load.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Vercel
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`vercel.json` selects the Other framework preset, skips install and build, and serves this directory. Résumé links and scripts use relative paths, so the same files work at the domain root.
