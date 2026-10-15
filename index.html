@@ -1,23 +1,113 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Ajay Rathod — Data Analyst and Software Developer. SQL, Python, dashboards, and full-stack delivery (React, Next.js, Supabase, Firebase). Portfolio, projects, and experience."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Ajay Rathod — Portfolio</title>
-  </head>
-  <body class="antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ajay Rathod — Data Analyst · Data Scientist</title>
+<meta name="description" content="Ajay Rathod — Data Analyst & Data Scientist in Pune, India. Python, SQL, ML, BI and full-stack engineering.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%237cf5c8%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<header class="nav">
+  <a href="#top" class="logo">AR<span>.</span>data</a>
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div id="globe" aria-hidden="true"></div>
+  <div class="hero-grad" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="mono kicker">&gt; SELECT * FROM people WHERE city = 'Pune';</p>
+    <h1 class="hero-title"><span class="scramble" data-text="Ajay">Ajay</span> <em class="scramble" data-text="Rathod">Rathod</em></h1>
+    <p class="hero-role">I turn raw data into <span class="typed" data-words="pricing decisions|demand forecasts|ML models|dashboards teams use|production pipelines"></span><span class="caret">|</span></p>
+    <p class="hero-sub">Data Analyst &amp; Data Scientist · 2+ years full-time experience · full-stack engineer at heart.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn magnetic"><span>See the work</span></a>
+      <a href="#resume" class="btn ghost magnetic"><span>Download résumé</span></a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div><b data-count="40">0</b>+<small>dashboard pages</small></div>
+    <div><b data-count="129">0</b>+<small>API routes</small></div>
+    <div><b data-count="49">0</b><small>PostgreSQL migrations</small></div>
+    <div><b data-count="6">0</b><small>regressors benchmarked</small></div>
+  </div>
+  <div class="scroll-hint mono">scroll ↓</div>
+</section>
+
+<section id="about" class="section about">
+  <div class="sec-head reveal"><span class="mono">01</span><h2>About</h2></div>
+  <div class="about-grid">
+    <p class="lead reveal">I’m a Software Developer at <b>Reunios</b> (since Jun 2024) who lives where data meets product: Python ETL pipelines, PostgreSQL data models and pricing-analytics apps that pricing, operations and finance teams use every day.</p>
+    <div class="about-copy reveal">
+      <p>Alongside that, I’ve gone deep on machine learning through a part-time Data Science internship at Airvariant and the ExcelR Data Science program — regression, classification, clustering, forecasting, NLP basics and TensorFlow/Keras, deployed with Flask and Streamlit.</p>
+      <p>I also build full-stack products (Next.js, React, FastAPI, Supabase, MongoDB) — so the models and analyses I make don’t stop at a notebook.</p>
+      <ul class="facts mono">
+        <li><span>location</span> Pune, Maharashtra, India</li>
+        <li><span>education</span> B.Tech CSE — Marathwada Institute of Technology (2020–2024)</li>
+        <li><span>certified</span> ExcelR Certificate of Excellence (May 2026)</li>
+        <li><span>notice</span> 15 days or less · open to relocation across India</li>
+      </ul>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">Python · SQL · Pandas · NumPy · Scikit-learn · XGBoost · LightGBM · Power BI · Tableau · Spark · Databricks · Snowflake · Airflow · AWS · LangChain · RAG · PyTorch · TensorFlow · Streamlit · FastAPI · Next.js · PostgreSQL ·&nbsp;</div></div>
+</section>
+
+<section id="skills" class="section skills">
+  <div class="sec-head reveal"><span class="mono">02</span><h2>Skills</h2></div>
+  <p class="note reveal">The chart shows how many tools I use in each area (counted from my résumés) — hover or tap a bar to see them.</p>
+  <div class="skills-wrap">
+    <div class="chart reveal" id="chart"></div>
+    <div class="skill-detail reveal" id="skillDetail"></div>
+  </div>
+</section>
+
+<section id="projects" class="section projects">
+  <div class="sec-head reveal"><span class="mono">03</span><h2>Projects</h2></div>
+  <div class="filters reveal">
+    <button class="chip active" data-f="all">All</button><button class="chip" data-f="data">Data &amp; ML</button><button class="chip" data-f="web">Full stack</button>
+  </div>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section id="experience" class="section experience">
+  <div class="sec-head reveal"><span class="mono">04</span><h2>Experience</h2></div>
+  <div class="timeline"><div class="tl-line"><div class="tl-fill"></div></div><div id="tl"></div></div>
+</section>
+
+<section id="resume" class="section resume">
+  <div class="sec-head reveal"><span class="mono">05</span><h2>Résumés</h2></div>
+  <p class="note reveal">Pick the version that fits the role.</p>
+  <div class="res-grid">
+    <a class="res reveal magnetic" href="resumes/Ajay_Rathod_Resume_DataAnalyst.pdf" download><span class="mono">PDF</span><h3>Data Analyst</h3><p>SQL, Pandas, BI, pricing analytics</p><i>↓</i></a>
+    <a class="res reveal magnetic" href="resumes/Ajay_Rathod_Resume_DataScientist.pdf" download><span class="mono">PDF</span><h3>Data Scientist</h3><p>ML, statistics, GenAI, big data</p><i>↓</i></a>
+    <a class="res reveal magnetic" href="resumes/Ajay_Rathod_Resume_FullStack.pdf" download><span class="mono">PDF</span><h3>Full Stack</h3><p>Next.js, React, Supabase, Node</p><i>↓</i></a>
+    <a class="res reveal magnetic" href="resumes/Ajay_Rathod_Resume_PythonBackend.pdf" download><span class="mono">PDF</span><h3>Python Backend</h3><p>FastAPI, PostgreSQL, automation</p><i>↓</i></a>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="sec-head reveal"><span class="mono">06</span><h2>Contact</h2></div>
+  <h3 class="big reveal">Have data that needs <em>answers?</em></h3>
+  <a class="mail magnetic reveal" href="mailto:rathodaj02@gmail.com"><span>rathodaj02@gmail.com</span></a>
+  <div class="socials reveal">
+    <a href="https://linkedin.com/in/ajay-rathod-1445ba222" target="_blank" rel="noopener" class="magnetic">LinkedIn ↗</a>
+    <a href="https://github.com/AjRathod02" target="_blank" rel="noopener" class="magnetic">GitHub ↗</a>
+    <a href="tel:+919834183493" class="magnetic">+91 98341 83493</a>
+  </div>
+  <footer class="mono">© <span id="yr"></span> Ajay Rathod · Pune, India · handmade with HTML, CSS &amp; JS</footer>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/main.js"></script>
+<script type="module" src="assets/hero3d.js"></script>
+</body>
 </html>
